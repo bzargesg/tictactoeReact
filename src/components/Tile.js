@@ -1,9 +1,10 @@
 import React from 'react';
 
-let Board = function () {
+let Board = function (props) {
+  console.log(props)
   return (
     <span className="Tile">
-      Tile
+      {props.val ? props.val : "__"}
     </span>
   )
 }
