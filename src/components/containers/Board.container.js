@@ -6,9 +6,8 @@ const mapStateToProps = state =>({
   ...state.board
 })
 const mapDispatchToProps = dispatch =>({
-  addX: (row, col)=>dispatch(boardActions.addX),
-  addO: (row, col)=>dispatch(boardActions.addO),
-  changeTurn: ()=>dispatch(boardActions.changeTurn)
+  addX: (row, col)=>dispatch(boardActions.addX(row,col)),
+  addO: (row, col)=>dispatch(boardActions.addO(row,col)),
 })
 
 export default connect(

@@ -15,7 +15,7 @@ function addX(row, col) {
 }
 function addO(row, col) {
   return {
-    type: ticTacToeConstants.X_PIECE,
+    type: ticTacToeConstants.O_PIECE,
     row,
     col
   }

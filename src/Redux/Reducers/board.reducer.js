@@ -7,10 +7,10 @@ export default function board(state = { turn: true, board : [['','',''],['','','
   switch(action.type){
     case ticTacToeConstants.O_PIECE:
       board[row][col] = "O"
-      return Object.assign({board, turn: !state.turn},state);
+      return {board, turn: !state.turn};
     case ticTacToeConstants.X_PIECE:
       board[row][col] = "X"
-      return Object.assign({board, turn: !state.turn},state);
+      return {board, turn: !state.turn};
     default:
       return state;
   }
