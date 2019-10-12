@@ -6,13 +6,14 @@ let Board = function (props) {
 
   return (
     <div className="Board">
-      Board
-      {driver(props.board) ? driver(props.board)+" wins!" : "no winner" }
+      <span className="win">{driver(props.board) ? driver(props.board)+" wins!" : "no winner" }</span>
+      <div className="container">
       {row.map(rowNum=>{
-        return (<div key={rowNum} className={rowNum} >{col.map(colNum=>{
+        return (<div key={rowNum} className="row" >{col.map(colNum=>{
           return  <Tile key={rowNum+""+colNum} row={rowNum} col={colNum}  addX={props.addX.bind(this)} addO={props.addO.bind(this)} turn={props.turn} val={props.board[rowNum][colNum]}/>
         })} </div>)
       })}
+      </div>
     </div>
   )
 }

@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background-color: #314a2f;
 }
 
 .App-logo {
@@ -19,4 +20,43 @@
 
 .App-link {
   color: #09d3ac;
+}
+
+header {
+  text-align: center;
+  color: white;
+  background-color: #333;
+  height: 10vh;
+}
+
+.Board {
+  height: 90vh;
+  left: 50%;
+  right: 50%;
+}
+
+.container {
+  padding: auto;
+  margin: auto;
+  display: grid;
+  height: 150px;
+  width: 150px;
+}
+
+.row {
+  display: flex;
+  width: 150px;
+  flex-grow: 1;
+}
+
+.win {
+  color: white;
+  font-size: 30px;
+}
+
+.Tile {
+  border: 1px solid #fbfbfb;
+  color: white;
+  width: 50px;
+  font-size: 50px;
 }
